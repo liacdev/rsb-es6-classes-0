@@ -29,6 +29,49 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <p>
+      I put a script containing a class inside the body element and it ended up
+      here.
+    </p>
+    <!-- This is an example of a class in react-->
+    <script>
+      class Car {
+        constructor(name) {
+          this.brand = name;
+        }
+        present() {
+          return (
+            "This is a method inside the Car class. I have a " +
+            this.brand +
+            ". "
+          );
+        }
+      }
+
+      const mycar = new Car("Mazda");
+      mycar.present();
+
+      document.write(
+        "This is a class in React. My car is a " + mycar.brand + ". "
+      );
+      document.write(mycar.present());
+
+      class Model extends Car {
+        constructor(name, mod) {
+          super(name);
+          this.model = mod;
+        }
+        show() {
+          return this.present() + "It is a " + this.model + ". ";
+        }
+      }
+
+      const mycar2 = new Model("Mazda", "CX-3");
+      mycar2.show();
+      document.write(mycar2.show());
+    </script>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Car from "./Classes/Car.js";
 
 function App() {
   return (
@@ -12,13 +13,22 @@ function App() {
           function to initiate it, we use the keyword class, and the properties
           are assigned inside a constructor() method.
         </p>
+        <p>Classes are named with an uppercase character.</p>
+        <p>
+          Scroll down to find some hidden elements that are inside the
+          index.html file
+        </p>
+
+        <Car>
+          This is my car class component. This text did not get rendered.
+        </Car>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/SouthpawCurveConcepts/rsb-es6-classes-0"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Link to repo
         </a>
       </header>
     </div>
