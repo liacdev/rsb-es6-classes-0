@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Classes</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          A class is a type of function, but instead of using the keyword
+          function to initiate it, we use the keyword class, and the properties
+          are assigned inside a constructor() method.
         </p>
         <a
           className="App-link"
